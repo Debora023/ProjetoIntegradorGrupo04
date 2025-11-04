@@ -5,6 +5,7 @@ import { CompraController } from "./controller/Compra";
 
 
 export const app = express();
+const PORTA = 3000
 
 
 app.use((req, res, next) => {
@@ -26,8 +27,8 @@ app.use(express.json());
 AgendamentoController();
 CompraController();
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
+app.listen(PORTA, () => {
+    console.log("Debora 123 Servidor no ar");
 });
 
 

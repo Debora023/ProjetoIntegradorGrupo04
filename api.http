@@ -1,0 +1,30 @@
+### Criar Compra
+POST http://localhost:3000/Compra
+content-type: application/json
+
+{
+  "telefone": "13 9999-9999",
+  "Cpf": "483920572991",
+  "NomeCompleto": "Debora",
+  "Nomedoplano": "plano familiar",
+  "FormaDepagamento": "Débito",
+  "tipoDepagamento": "A vista"
+}
+
+### Listar todos os Agendamento
+POST http://localhost:3000/Agendamento
+content-type: application/json
+
+{
+  "nome": "João",
+  "email": "joao@email.com",
+  "especialidade": "Clinico Geral",
+  "dataConsulta": "23/12",
+  "horario": "15:00 horas",
+  "telefone": "13 9999-9999"
+}
+
+
+
+### Listar todos os usuários
+GET http://localhost:3000/usuarios

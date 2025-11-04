@@ -11,7 +11,7 @@ export class CompraService {
         FormaDepagamento: FormaPagamento,
         tipoDepagamento: TipoPagamento
 
-     }): Compra | void {
+     }): Compra | void { 
        const CompraFeita = Compra.create(
          Comprar.telefone,
          Comprar.Cpf,
@@ -30,9 +30,7 @@ export class CompraService {
       return this.listaC;
     }
   
-    public buscarPorCompra(: Date): Compra[] {
-      return this.listaC.filter(
-        (a) => a.getdataConsulta().toDateString() === .toDateString()
-      );
+    public buscarPorCompraComNomeDoCliente(NomeCliente: String): Compra | undefined {
+      return this.listaC.find((a) => a.getNomeCompleto() == NomeCliente);
     }
 }
