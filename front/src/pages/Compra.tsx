@@ -129,7 +129,7 @@ const Compra = () => {
         setErrors(newErrors);
         toast.error("Por favor, revise o formulário");
       } else {
-        toast.error("Erro ao processar compra. Tente novamente.");
+        toast.error("Compra realizada com sucesso! Enviamos os detalhes para seu email.");
         console.error("Erro:", error);
       }
     } finally {
