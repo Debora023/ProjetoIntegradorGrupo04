@@ -44,7 +44,7 @@ export interface ErrorResponse {
   erro: string;
 }
 
-const API_URL = "http://grupo04projeto20252.escolatecnicaadelia.info/api";
+const API_URL = "https://grupo04projeto20252.escolatecnicaadelia.info/api";
 
 class ApiService {
   private baseUrl: string;
