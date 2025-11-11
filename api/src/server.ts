@@ -5,7 +5,7 @@ import { CompraController } from "./controller/Compra";
 
 
 export const app = express();
-const PORTA = 3000
+const PORTA = 3004
 
 
 app.use((req, res, next) => {
@@ -28,7 +28,7 @@ AgendamentoController();
 CompraController();
 
 app.listen(PORTA, () => {
-    console.log("Debora 123 Servidor no ar");
+    console.log("Servidor rodando na porta...");
 });
 
 

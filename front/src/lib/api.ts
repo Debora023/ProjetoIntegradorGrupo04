@@ -44,7 +44,7 @@ export interface ErrorResponse {
   erro: string;
 }
 
-const API_URL = "http://localhost:3000";
+const API_URL = "http://grupo04projeto.escolatecnicaadelia.info/api";
 
 class ApiService {
   private baseUrl: string;
