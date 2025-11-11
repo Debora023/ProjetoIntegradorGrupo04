@@ -5,12 +5,12 @@ import { AgendamentoService } from "../service/Agendamento";
 export function AgendamentoController() {
   const service = new AgendamentoService();
 
-  app.get("/Agendamento", (req, res) => {
+  app.get("/api/Agendamento", (req, res) => {
     const Agendamento = service.listarAgendamentos();
     res.send(Agendamento)
   })
 
-  app.post("/Agendamento", (req, res) => {
+  app.post("/api/Agendamento", (req, res) => {
     try {
       const dadosAgendamento = req.body;
       const novoAgendamento = service.Agendar(dadosAgendamento);

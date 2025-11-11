@@ -37,8 +37,7 @@ export class Compra {
     tipoDepagamento: TipoPagamento
 
 ) {
-        const id = crypto.randomUUID();
-        return new Compra(id, telefone, cpf, NomeCompleto, Nomedoplano, FormaDepagamento, tipoDepagamento);
+        return new Compra("oi", telefone, cpf, NomeCompleto, Nomedoplano, FormaDepagamento, tipoDepagamento);
 
 }
 

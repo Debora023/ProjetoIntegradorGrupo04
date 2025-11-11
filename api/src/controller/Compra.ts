@@ -5,12 +5,12 @@ import { CompraService } from "../service/Compra";
 export function CompraController() {
     const service = new CompraService();
 
-  app.get("/Compra", (req, res) => {
+  app.get("/api/Compra", (req, res) => {
     const Compra = service.listaCompras();
     res.send(Compra)
   })
 
-  app.post("/Compra", (req, res) => {
+  app.post("/api/Compra", (req, res) => {
     try {
       const dadosCompra = req.body;
       const novoCompra = service.Compra(dadosCompra);

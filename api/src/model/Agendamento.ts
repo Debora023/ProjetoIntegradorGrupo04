@@ -20,8 +20,7 @@ export class Agendamento {
     }
 
     static create(nome: String, email: String, especialidade: String, dataConsulta: Date, horario: String, telefone: String) {
-        const id = crypto.randomUUID();
-        return new Agendamento(id, nome, email, especialidade, dataConsulta, horario, telefone);
+        return new Agendamento("oi", nome, email, especialidade, dataConsulta, horario, telefone);
     }
 
     getId(): String {
